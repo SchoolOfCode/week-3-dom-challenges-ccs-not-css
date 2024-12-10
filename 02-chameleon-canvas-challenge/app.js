@@ -13,3 +13,20 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+
+//Select the canvas
+//Create a function to use the colour picker to change the canvas colour (with styles)
+// Add the addEventListener so that when the color is changed, the canvas switches to that colour.addEventListener
+
+let newCanvas = document.getElementById("canvas");
+
+let newColour = document.getElementById("colorPicker");
+
+function updatedColour () {
+    newCanvas.style.background = newColour.value
+}
+
+newColour.addEventListener("input", updatedColour);
+
+
+
