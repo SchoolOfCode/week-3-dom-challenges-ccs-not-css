@@ -13,3 +13,29 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+
+//1. select the input value from starSlider id
+//2. function that checks what the number is of the value
+//then creates new star element
+
+
+let sliderNumber = document.getElementById("starSlider");
+//2. select div stars
+let starNumber = document.getElementById("stars");
+//3. function that takes slider number
+//3.1 
+
+function moreStars () {
+  
+  const number= sliderNumber.value;
+  console.log(number);
+  const newStars =document.createElement(("span") * number).textContent="★";
+  console.log(newStars);
+ // appendChild(newStars)
+  
+} 
+
+// 3.5 div.classList.add("...")? createElement(span, "star-icon")
+// 4. addEventListener (range, moreStars)
+
+sliderNumber.addEventListener("onmousedown", moreStars);
